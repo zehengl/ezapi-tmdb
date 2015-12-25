@@ -1,6 +1,8 @@
 ezapi\_tmdb
 ===========
 
+|Build Status| |PyPI1| |PyPI2|
+
 An easy api for TMDb written in Python
 
 It implements the api provided by TMDb. For details, see
@@ -76,3 +78,10 @@ TODO
 
 -  api that requires session\_id
 -  unit tests
+
+.. |Build Status| image:: https://travis-ci.org/zehengl/ezapi_tmdb.svg?branch=master
+   :target: https://travis-ci.org/zehengl/ezapi_tmdb
+.. |PyPI1| image:: https://img.shields.io/pypi/dm/ezapi_tmdb.svg
+   :target: https://pypi.python.org/pypi/ezapi-tmdb
+.. |PyPI2| image:: https://img.shields.io/pypi/v/ezapi-tmdb.svg
+   :target: https://pypi.python.org/pypi/ezapi-tmdb

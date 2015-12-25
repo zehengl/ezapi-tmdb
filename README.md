@@ -1,5 +1,5 @@
 # ezapi_tmdb
-
+[![Build Status](https://travis-ci.org/zehengl/ezapi_tmdb.svg?branch=master)](https://travis-ci.org/zehengl/ezapi_tmdb) [![PyPI](https://img.shields.io/pypi/dm/ezapi_tmdb.svg)](https://pypi.python.org/pypi/ezapi-tmdb) [![PyPI](https://img.shields.io/pypi/v/ezapi-tmdb.svg)](https://pypi.python.org/pypi/ezapi-tmdb)
 
 An easy api for TMDb written in Python
 
