@@ -1,1 +1,1 @@
-from ezapiyelp import EZapiYelp
+from ezapitmdb import EZapiTMDb
