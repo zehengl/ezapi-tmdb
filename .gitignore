@@ -1,4 +1,7 @@
-dist
+*.conf
 *.egg-info
+*.eggs
 *.pyc
+.coverage
 .DS_Store
+.idea

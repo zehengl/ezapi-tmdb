@@ -1,11 +1,19 @@
 language: python
 python:
-  - "2.6"
   - "2.7"
-  - "3.2"
   - "3.3"
   - "3.4"
+  - "3.5"
 install:
-  - pip install requests
+  - pip install coveralls
+  - pip install -r requirements.txt
+  - pip install .
 script:
-  - python setup.py sdist
+  - touch tests/credentials.conf
+  - echo '[v3]' >> tests/credentials.conf
+  - echo api_key=$api_key >> tests/credentials.conf
+  - echo '[v4]' >> tests/credentials.conf
+  - echo api_key=$api_key >> tests/credentials.conf
+  - coverage run --source=tmdb --omit="tmdb/cli/*" setup.py test
+after_success:
+  - coveralls

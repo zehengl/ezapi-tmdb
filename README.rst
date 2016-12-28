@@ -1,12 +1,12 @@
 ezapi\_tmdb
 ===========
 
-|Build Status| |PyPI1| |PyPI2|
+A Python wrapper for TMDb API, supporting version
+`3 <https://developers.themoviedb.org/3/getting-started>`__
 
-An easy api for TMDb written in Python
-
-It implements the api provided by TMDb. For details, see
-http://docs.themoviedb.apiary.io/#
+-  Implement all endpoints
+-  Provide CLI
+-  Include unit tests
 
 Install
 =======
@@ -15,73 +15,41 @@ Install
 
     pip install ezapi_tmdb
 
-Usage
-=====
-
-.. code:: python
-
-    from ezapi_yelp import EZapiTMDb
-
-    api_key = 'YOUR api_key'
-    test_api = EZapiTMDb(api_key)
-
-    # Simple examples
-
-    print test_api.configuration()
-
-    for t in test_api.category_certifications:
-        print test_api.certifications(t)
-
-    for t in test_api.category_changes:
-        print test_api.changes(t)
-
-    for t in test_api.category_discover:
-        print test_api.discover(t)
-
-    for t in test_api.category_genres:
-        print test_api.genres(t)
-
-    print test_api.jobs()
-
-    print test_api.timezones()
-
-    print test_api.search('movie',query='star war')
-
-    print test_api.search('person',query='matt damon')
-
-    print test_api.search('tv',query='big bang')
-
-    print test_api.detail('tv',1418)
-
-    print test_api.detail('tv',1418,'credits')
-
-Changelist
-==========
-
--  2015/12/24
-
-   -  Multiple "GET" api: configuration, certifications, changes,
-      discover, genres, jobs, timezones
-   -  Also the search api
-
-      -  category: **company**, **collection**, **keyword**, **list**,
-         **movie**, **multi**, **person**, **tv**
-      -  api usage: .search(\ *category*, query="some key words")
-
-   -  And detail for a search result, such as:
-
-      -  /tv/**id** and /tv/**id**/changes
-      -  /person/**id** and /person/**id**/tv\_credits
-
-TODO
+Test
 ====
 
--  api that requires session\_id
--  unit tests
+1. Clone down the repo
 
-.. |Build Status| image:: https://travis-ci.org/zehengl/ezapi_tmdb.svg?branch=master
-   :target: https://travis-ci.org/zehengl/ezapi_tmdb
-.. |PyPI1| image:: https://img.shields.io/pypi/dm/ezapi_tmdb.svg
-   :target: https://pypi.python.org/pypi/ezapi-tmdb
-.. |PyPI2| image:: https://img.shields.io/pypi/v/ezapi-tmdb.svg
-   :target: https://pypi.python.org/pypi/ezapi-tmdb
+   .. code:: bash
+
+       git clone git@github.com:zehengl/ezapi-tmdb.git
+       cd ezapi-tmdb
+
+2. Create a config file to store your api key for testing
+
+   .. code:: bash
+
+       touch tests/credentials.conf
+
+3. Put donw your api key as follows
+
+   ::
+
+       [v3]
+       api_key = xxxx
+
+       [v4]
+       api_key = xxxx
+
+4. Run the tests
+
+   .. code:: bash
+
+       python setup.py test
+
+Contact
+=======
+
+Zeheng Li
+
+imzehengl@gmail.com

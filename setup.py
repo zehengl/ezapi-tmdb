@@ -1,5 +1,4 @@
-
-from setuptools import setup
+from setuptools import setup, find_packages
 from codecs import open
 from os import path
 
@@ -10,10 +9,10 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name='ezapi_tmdb',
-
-    version='0.1.0',
-
-    description='An easy api for TMDb written in Python',
+    keywords='TMDb v3 v4',
+    version='0.2.0',
+    packages=find_packages(exclude=['tests', 'tests.*']),
+    description='An Python wrapper for TMDb API',
     long_description=long_description,
 
     url='https://github.com/zehengl/ezapi_tmdb',
@@ -23,26 +22,31 @@ setup(
 
     license='MIT',
 
+    entry_points={
+        'console_scripts': [
+            'tmdb3 = tmdb.cli.v3:run',
+            'tmdb4 = tmdb.cli.v4:run',
+        ]
+    },
+
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
         'Topic :: Software Development :: Libraries :: Python Modules',
         'License :: OSI Approved :: MIT License',
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.2',
         'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
     ],
 
-    packages=[
-        'ezapi_tmdb',
+
+    install_requires=[
+        'click',
+        'configparser',
+        'requests',
+        'six',
     ],
 
-    keywords='TMDb API',
-
-    install_requires=['requests'],
-
+    test_suite='tests',
 )
