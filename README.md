@@ -3,6 +3,8 @@ ezapi_tmdb
 
 A Python wrapper for TMDb API, supporting version [3](https://developers.themoviedb.org/3/getting-started)
 
+[![Travis](https://img.shields.io/travis/zehengl/ezapi-tmdb.svg)](https://travis-ci.org/zehengl/ezapi-tmdb)[![PyPI](https://img.shields.io/pypi/v/ezapi-tmdb.svg)](https://pypi.python.org/pypi/ezapi-tmdb)[![Coveralls](https://img.shields.io/coveralls/zehengl/ezapi-tmdb.svg)](https://coveralls.io/github/zehengl/ezapi-tmdb)
+
 * Implement all endpoints
 * Provide CLI
 * Include unit tests
