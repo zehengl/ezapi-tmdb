@@ -1,12 +1,12 @@
-class TMDBException(Exception):
-    """Yelp Exception"""
+class TMDbException(Exception):
+    """TMdb Exception"""
     def __init__(self, *args, **kwargs):
-        super(TMDBException, self).__init__(*args, **kwargs)
+        super(TMDbException, self).__init__(*args, **kwargs)
 
 
-class InvalidParameter(TMDBException):
+class InvalidParameter(TMDbException):
     """An invalid parameter occurred"""
 
 
-class InvalidEndpoint(TMDBException):
+class InvalidEndpoint(TMDbException):
     """An invalid endpoint occurred"""
