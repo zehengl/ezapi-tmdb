@@ -1,8 +1,10 @@
-ezapi\_tmdb
-===========
+ezapi-tmdb
+==========
 
 A Python wrapper for TMDb API, supporting version
 `3 <https://developers.themoviedb.org/3/getting-started>`__
+
+|Travis|\ |PyPI|\ |Coveralls|\ |Code Climate|
 
 -  Implement all endpoints
 -  Provide CLI
@@ -53,3 +55,12 @@ Contact
 Zeheng Li
 
 imzehengl@gmail.com
+
+.. |Travis| image:: https://img.shields.io/travis/zehengl/ezapi-tmdb.svg
+   :target: https://travis-ci.org/zehengl/ezapi-tmdb
+.. |PyPI| image:: https://img.shields.io/pypi/v/ezapi-tmdb.svg
+   :target: https://pypi.python.org/pypi/ezapi-tmdb
+.. |Coveralls| image:: https://img.shields.io/coveralls/zehengl/ezapi-tmdb.svg
+   :target: https://coveralls.io/github/zehengl/ezapi-tmdb
+.. |Code Climate| image:: https://img.shields.io/codeclimate/github/zehengl/ezapi-tmdb.svg
+   :target: https://codeclimate.com/github/zehengl/ezapi-tmdb
