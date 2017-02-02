@@ -18,6 +18,4 @@ script:
   - coverage run --source=tmdb --omit="tmdb/cli/*" setup.py test
 after_success:
   - coveralls
-addons:
-    code_climate:
-        repo_token:
+  - codeclimate-test-reporter
