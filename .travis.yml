@@ -17,3 +17,6 @@ script:
   - coverage run --source=tmdb --omit="tmdb/cli/*" setup.py test
 after_success:
   - coveralls
+addons:
+    code_climate:
+        repo_token: 53e105fbaf9d4c31e0bb5f32c97775952220d1e08727adf11ed1bbc040e92a31
