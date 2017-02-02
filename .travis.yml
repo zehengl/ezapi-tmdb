@@ -7,6 +7,7 @@ python:
 install:
   - pip install coveralls
   - pip install -r requirements.txt
+  - pip install codeclimate-test-reporter
   - pip install .
 script:
   - touch tests/credentials.conf
@@ -19,4 +20,4 @@ after_success:
   - coveralls
 addons:
     code_climate:
-        repo_token: 53e105fbaf9d4c31e0bb5f32c97775952220d1e08727adf11ed1bbc040e92a31
+        repo_token:
