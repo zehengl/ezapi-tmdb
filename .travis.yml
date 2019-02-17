@@ -1,21 +1,7 @@
 language: python
+
 python:
-  - "2.7"
-  - "3.3"
-  - "3.4"
-  - "3.5"
-install:
-  - pip install coveralls
-  - pip install -r requirements.txt
-  - pip install codeclimate-test-reporter
-  - pip install .
+  - "3.6"
+
 script:
-  - touch tests/credentials.conf
-  - echo '[v3]' >> tests/credentials.conf
-  - echo api_key=$api_key >> tests/credentials.conf
-  - echo '[v4]' >> tests/credentials.conf
-  - echo api_key=$api_key >> tests/credentials.conf
-  - coverage run --source=tmdb --omit="tmdb/cli/*" setup.py test
-after_success:
-  - coveralls
-  - codeclimate-test-reporter
+  - python setup.py test

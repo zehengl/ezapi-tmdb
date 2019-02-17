@@ -1,4 +1,2 @@
-click==6.6
-configparser==3.5.0
-requests==2.12.4
-six==1.10.0
+requests==2.21.0
+wrapt==1.11.1
