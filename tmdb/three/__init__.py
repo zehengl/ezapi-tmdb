@@ -7,6 +7,7 @@ from .configuration import ConfigurationMixin
 from .discover import DiscoverMixin
 from .genres import GenresMixin
 from .movies import MoviesMixin
+from .people import PeopleMixin
 from .reviews import ReviewsMixin
 from .trending import TrendingMixin
 from .tv import TVsMixin
@@ -19,6 +20,7 @@ mixins = [
     DiscoverMixin,
     GenresMixin,
     MoviesMixin,
+    PeopleMixin,
     ReviewsMixin,
     TrendingMixin,
     TVsMixin,
