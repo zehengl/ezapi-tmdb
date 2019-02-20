@@ -7,6 +7,8 @@ from .configuration import ConfigurationMixin
 from .discover import DiscoverMixin
 from .genres import GenresMixin
 from .movies import MoviesMixin
+from .reviews import ReviewsMixin
+from .tv import TVsMixin
 
 mixins = [
     CertificationsMixin,
@@ -16,6 +18,8 @@ mixins = [
     DiscoverMixin,
     GenresMixin,
     MoviesMixin,
+    ReviewsMixin,
+    TVsMixin,
 ]
 
 
