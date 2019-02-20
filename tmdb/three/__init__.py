@@ -8,6 +8,7 @@ from .discover import DiscoverMixin
 from .genres import GenresMixin
 from .keywords import KeywordsMixin
 from .movies import MoviesMixin
+from .networks import NetworksMixin
 from .people import PeopleMixin
 from .reviews import ReviewsMixin
 from .trending import TrendingMixin
@@ -22,6 +23,7 @@ mixins = [
     GenresMixin,
     KeywordsMixin,
     MoviesMixin,
+    NetworksMixin,
     PeopleMixin,
     ReviewsMixin,
     TrendingMixin,
