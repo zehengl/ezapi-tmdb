@@ -10,6 +10,7 @@ from .keywords import KeywordsMixin
 from .movies import MoviesMixin
 from .networks import NetworksMixin
 from .people import PeopleMixin
+from .search import SearchMixin
 from .reviews import ReviewsMixin
 from .trending import TrendingMixin
 from .tv import TVsMixin
@@ -26,6 +27,7 @@ mixins = [
     NetworksMixin,
     PeopleMixin,
     ReviewsMixin,
+    SearchMixin,
     TrendingMixin,
     TVsMixin,
 ]
