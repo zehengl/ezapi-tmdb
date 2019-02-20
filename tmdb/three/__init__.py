@@ -6,6 +6,7 @@ from .companies import CompaniesMixin
 from .configuration import ConfigurationMixin
 from .discover import DiscoverMixin
 from .genres import GenresMixin
+from .keywords import KeywordsMixin
 from .movies import MoviesMixin
 from .people import PeopleMixin
 from .reviews import ReviewsMixin
@@ -19,6 +20,7 @@ mixins = [
     ConfigurationMixin,
     DiscoverMixin,
     GenresMixin,
+    KeywordsMixin,
     MoviesMixin,
     PeopleMixin,
     ReviewsMixin,
