@@ -5,6 +5,7 @@ from .changes import ChangesMixin
 from .collections import CollectionsMixin
 from .companies import CompaniesMixin
 from .configuration import ConfigurationMixin
+from .credits import CreditsMixin
 from .discover import DiscoverMixin
 from .genres import GenresMixin
 from .keywords import KeywordsMixin
@@ -22,6 +23,7 @@ mixins = [
     CollectionsMixin,
     CompaniesMixin,
     ConfigurationMixin,
+    CreditsMixin,
     DiscoverMixin,
     GenresMixin,
     KeywordsMixin,
