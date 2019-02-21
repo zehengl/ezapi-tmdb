@@ -2,6 +2,7 @@ import requests
 
 from .certifications import CertificationsMixin
 from .changes import ChangesMixin
+from .collections import CollectionsMixin
 from .companies import CompaniesMixin
 from .configuration import ConfigurationMixin
 from .discover import DiscoverMixin
@@ -18,6 +19,7 @@ from .tv import TVsMixin
 mixins = [
     CertificationsMixin,
     ChangesMixin,
+    CollectionsMixin,
     CompaniesMixin,
     ConfigurationMixin,
     DiscoverMixin,
