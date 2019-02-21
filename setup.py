@@ -9,7 +9,7 @@ with open(path.join(here, "README.md")) as f:
 setup(
     name="ezapi_tmdb",
     keywords="TMDb",
-    version="0.3.0",
+    version="0.4.0",
     packages=find_packages(),
     description="An Python wrapper for TMDb API",
     long_description=long_description,

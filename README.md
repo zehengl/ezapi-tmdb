@@ -7,7 +7,7 @@ A Python wrapper for TMDb API, supporting version [3](https://developers.themovi
 ![PyPI - License](https://img.shields.io/pypi/l/ezapi-tmdb.svg)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/ezapi-tmdb.svg)
 [![PyPI](https://img.shields.io/pypi/v/ezapi-tmdb.svg)](https://pypi.python.org/pypi/ezapi-tmdb)
-![GitHub commits since latest release](https://img.shields.io/github/commits-since/zehengl/ezapi-tmdb/0.3.0.svg)
+![GitHub commits since latest release](https://img.shields.io/github/commits-since/zehengl/ezapi-tmdb/0.4.0.svg)
 
 ## Install
 
