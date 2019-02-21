@@ -2,93 +2,95 @@ import pytest
 
 from . import polite
 
+movie_id = 597  # Titanic
+
 
 @polite
 def test_get_movie_details(tmdb):
-    assert tmdb.get_movie_details(597) is not None
+    assert tmdb.get_movie_details(movie_id) is not None
 
 
 @polite
 def test_get_movie_account_states(tmdb):
     with pytest.raises(RuntimeError):
-        assert tmdb.get_movie_account_states(597)
+        assert tmdb.get_movie_account_states(movie_id)
 
 
 @polite
 def test_get_movie_alternative_titles(tmdb):
-    assert tmdb.get_movie_alternative_titles(597) is not None
+    assert tmdb.get_movie_alternative_titles(movie_id) is not None
 
 
 @polite
 def test_get_movie_credits(tmdb):
-    assert tmdb.get_movie_credits(597) is not None
+    assert tmdb.get_movie_credits(movie_id) is not None
 
 
 @polite
 def test_get_movie_changes(tmdb):
-    assert tmdb.get_movie_changes(597) is not None
+    assert tmdb.get_movie_changes(movie_id) is not None
 
 
 @polite
 def test_get_movie_external_ids(tmdb):
-    assert tmdb.get_movie_external_ids(597) is not None
+    assert tmdb.get_movie_external_ids(movie_id) is not None
 
 
 @polite
 def test_get_movie_images(tmdb):
-    assert tmdb.get_movie_images(597) is not None
+    assert tmdb.get_movie_images(movie_id) is not None
 
 
 @polite
 def test_get_movie_keywords(tmdb):
-    assert tmdb.get_movie_keywords(597) is not None
+    assert tmdb.get_movie_keywords(movie_id) is not None
 
 
 @polite
 def test_get_movie_release_dates(tmdb):
-    assert tmdb.get_movie_release_dates(597) is not None
+    assert tmdb.get_movie_release_dates(movie_id) is not None
 
 
 @polite
 def test_get_movie_videos(tmdb):
-    assert tmdb.get_movie_videos(597) is not None
+    assert tmdb.get_movie_videos(movie_id) is not None
 
 
 @polite
 def test_get_movie_translations(tmdb):
-    assert tmdb.get_movie_translations(597) is not None
+    assert tmdb.get_movie_translations(movie_id) is not None
 
 
 @polite
 def test_get_movie_recommendations(tmdb):
-    assert tmdb.get_movie_recommendations(597) is not None
+    assert tmdb.get_movie_recommendations(movie_id) is not None
 
 
 @polite
 def test_get_movie_similar(tmdb):
-    assert tmdb.get_movie_similar(597) is not None
+    assert tmdb.get_movie_similar(movie_id) is not None
 
 
 @polite
 def test_get_movie_reviews(tmdb):
-    assert tmdb.get_movie_reviews(597) is not None
+    assert tmdb.get_movie_reviews(movie_id) is not None
 
 
 @polite
 def test_get_movie_lists(tmdb):
-    assert tmdb.get_movie_lists(597) is not None
+    assert tmdb.get_movie_lists(movie_id) is not None
 
 
 @polite
 def test_post_movie_rating(tmdb):
     with pytest.raises(RuntimeError):
-        assert tmdb.post_movie_rating(597, 10)
+        assert tmdb.post_movie_rating(movie_id, 10)
 
 
 @polite
 def test_delete_movie_rating(tmdb):
     with pytest.raises(RuntimeError):
-        assert tmdb.delete_movie_rating(597)
+        assert tmdb.delete_movie_rating(movie_id)
 
 
 @polite
