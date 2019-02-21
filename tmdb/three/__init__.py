@@ -1,5 +1,6 @@
 import requests
 
+from .authentication import AuthenticationMixin
 from .certifications import CertificationsMixin
 from .changes import ChangesMixin
 from .collections import CollectionsMixin
@@ -20,6 +21,7 @@ from .trending import TrendingMixin
 from .tv import TVsMixin
 
 mixins = [
+    AuthenticationMixin,
     CertificationsMixin,
     ChangesMixin,
     CollectionsMixin,
