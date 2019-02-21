@@ -7,6 +7,7 @@ from .companies import CompaniesMixin
 from .configuration import ConfigurationMixin
 from .credits import CreditsMixin
 from .discover import DiscoverMixin
+from .find import FindMixin
 from .genres import GenresMixin
 from .keywords import KeywordsMixin
 from .movies import MoviesMixin
@@ -25,6 +26,7 @@ mixins = [
     ConfigurationMixin,
     CreditsMixin,
     DiscoverMixin,
+    FindMixin,
     GenresMixin,
     KeywordsMixin,
     MoviesMixin,
