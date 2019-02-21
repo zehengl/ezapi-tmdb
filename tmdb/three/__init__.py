@@ -9,6 +9,7 @@ from .credits import CreditsMixin
 from .discover import DiscoverMixin
 from .find import FindMixin
 from .genres import GenresMixin
+from .guest_sessions import GuestSessionsMixin
 from .keywords import KeywordsMixin
 from .movies import MoviesMixin
 from .networks import NetworksMixin
@@ -28,6 +29,7 @@ mixins = [
     DiscoverMixin,
     FindMixin,
     GenresMixin,
+    GuestSessionsMixin,
     KeywordsMixin,
     MoviesMixin,
     NetworksMixin,
