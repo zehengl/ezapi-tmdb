@@ -17,6 +17,8 @@ A Python wrapper for TMDb API, supporting version [3](https://developers.themovi
 
     git clone git@github.com:zehengl/ezapi-tmdb.git
     export api_key="..."
+    export username="..."
+    export password="..."
     cd ezapi-tmdb
     python setup.py test
 
