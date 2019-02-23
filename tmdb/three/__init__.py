@@ -19,6 +19,7 @@ from .search import SearchMixin
 from .reviews import ReviewsMixin
 from .trending import TrendingMixin
 from .tv import TVsMixin
+from .tv_episodes import TVEpisodesMixin
 from .tv_seasons import TVSeasonsMixin
 
 mixins = [
@@ -40,6 +41,7 @@ mixins = [
     ReviewsMixin,
     SearchMixin,
     TrendingMixin,
+    TVEpisodesMixin,
     TVSeasonsMixin,
     TVsMixin,
 ]
