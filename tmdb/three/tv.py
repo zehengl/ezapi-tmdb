@@ -85,8 +85,9 @@ class TVsMixin:
 
     @any_required_kwargs(["session_id"], ["guest_session_id"])
     @process_response
-    def post_tv_rating(self, tv_id, payload, **kwargs):
+    def post_tv_rating(self, tv_id, rating, **kwargs):
         url = f"{ENDPOINT}/3/tv/{tv_id}/rating"
+        payload = {"value": rating}
         return self.make_request("POST", url, kwargs, payload)
 
     @any_required_kwargs(["session_id"], ["guest_session_id"])

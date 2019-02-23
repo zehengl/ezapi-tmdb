@@ -24,7 +24,7 @@ def test_get_tv_episode_changes(tmdb):
 @polite
 @pytest.mark.parametrize("with_guest_session", [True, False])
 def test_post_tv_episode_rating(tmdb, with_guest_session):
-    payload = {"value": 10}
+    rating = 10
 
     if with_guest_session:
         guest_session_id = tmdb.create_guest_session().get("guest_session_id")
@@ -32,13 +32,13 @@ def test_post_tv_episode_rating(tmdb, with_guest_session):
             tv_id,
             season_number,
             episode_number,
-            payload,
+            rating,
             guest_session_id=guest_session_id,
         )
     else:
         with pytest.raises(RuntimeError):
             assert tmdb.post_tv_episode_rating(
-                tv_id, season_number, episode_number, payload
+                tv_id, season_number, episode_number, rating
             )
 
 
