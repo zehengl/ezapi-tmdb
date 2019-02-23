@@ -20,7 +20,8 @@ def test_get_tv_season_account_states(tmdb):
 
 @polite
 def test_get_tv_season_changes(tmdb):
-    assert tmdb.get_tv_season_changes(season_number) is not None
+    season_id = tmdb.get_tv_season_details(tv_id, season_number).get("id")
+    assert tmdb.get_tv_season_changes(season_id) is not None
 
 
 @polite

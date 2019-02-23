@@ -14,8 +14,8 @@ class TVSeasonsMixin:
         return self.make_request("GET", url, kwargs)
 
     @process_response
-    def get_tv_season_changes(self, season_number, **kwargs):
-        url = f"{ENDPOINT}/3/tv/season/{season_number}/changes"
+    def get_tv_season_changes(self, season_id, **kwargs):
+        url = f"{ENDPOINT}/3/tv/season/{season_id}/changes"
         return self.make_request("GET", url, kwargs)
 
     @process_response
