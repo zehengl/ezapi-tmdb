@@ -26,16 +26,7 @@ def test_get_list_item_status(tmdb, is_error):
 
 
 @polite
-def test_list_operations(tmdb):
-    username = os.getenv("username")
-    password = os.getenv("password")
-    request_token = tmdb.create_request_token().get("request_token")
-
-    assert username and password and request_token
-    assert tmdb.create_session_with_login(username, password, request_token)
-
-    session_id = tmdb.create_session(request_token).get("session_id")
-
+def test_list_operations(tmdb, session_id):
     list_id = tmdb.create_list("test_list", session_id=session_id).get("list_id")
 
     assert tmdb.add_movie(list_id, movie_id, session_id=session_id) is not None

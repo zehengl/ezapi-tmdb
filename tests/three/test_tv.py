@@ -12,9 +12,13 @@ def test_get_tv_details(tmdb):
 
 
 @polite
-def test_get_tv_account_states(tmdb):
-    with pytest.raises(RuntimeError):
-        assert tmdb.get_tv_account_states(tv_id)
+@pytest.mark.parametrize("is_error", [True, False])
+def test_get_tv_account_states(tmdb, session_id, is_error):
+    if is_error:
+        with pytest.raises(RuntimeError):
+            assert tmdb.get_tv_account_states(tv_id)
+    else:
+        assert tmdb.get_tv_account_states(tv_id, session_id=session_id) is not None
 
 
 @polite
@@ -88,15 +92,23 @@ def test_get_tv_videos(tmdb):
 
 
 @polite
-def test_post_tv_rating(tmdb):
-    with pytest.raises(RuntimeError):
-        assert tmdb.post_tv_rating(tv_id, 10)
+@pytest.mark.parametrize("is_error", [True, False])
+def test_post_tv_rating(tmdb, session_id, is_error):
+    if is_error:
+        with pytest.raises(RuntimeError):
+            assert tmdb.post_tv_rating(tv_id, 10)
+    else:
+        assert tmdb.post_tv_rating(tv_id, 10, session_id=session_id) is not None
 
 
 @polite
-def test_delete_tv_rating(tmdb):
-    with pytest.raises(RuntimeError):
-        assert tmdb.delete_tv_rating(tv_id)
+@pytest.mark.parametrize("is_error", [True, False])
+def test_delete_tv_rating(tmdb, session_id, is_error):
+    if is_error:
+        with pytest.raises(RuntimeError):
+            assert tmdb.delete_tv_rating(tv_id)
+    else:
+        assert tmdb.delete_tv_rating(tv_id, session_id=session_id) is not None
 
 
 @polite

@@ -11,9 +11,15 @@ def test_get_movie_details(tmdb):
 
 
 @polite
-def test_get_movie_account_states(tmdb):
-    with pytest.raises(RuntimeError):
-        assert tmdb.get_movie_account_states(movie_id)
+@pytest.mark.parametrize("is_error", [True, False])
+def test_get_movie_account_states(tmdb, session_id, is_error):
+    if is_error:
+        with pytest.raises(RuntimeError):
+            assert tmdb.get_movie_account_states(movie_id)
+    else:
+        assert (
+            tmdb.get_movie_account_states(movie_id, session_id=session_id) is not None
+        )
 
 
 @polite
@@ -82,15 +88,23 @@ def test_get_movie_lists(tmdb):
 
 
 @polite
-def test_post_movie_rating(tmdb):
-    with pytest.raises(RuntimeError):
-        assert tmdb.post_movie_rating(movie_id, 10)
+@pytest.mark.parametrize("is_error", [True, False])
+def test_post_movie_rating(tmdb, session_id, is_error):
+    if is_error:
+        with pytest.raises(RuntimeError):
+            assert tmdb.post_movie_rating(movie_id, 10)
+    else:
+        assert tmdb.post_movie_rating(movie_id, 10, session_id=session_id) is not None
 
 
 @polite
-def test_delete_movie_rating(tmdb):
-    with pytest.raises(RuntimeError):
-        assert tmdb.delete_movie_rating(movie_id)
+@pytest.mark.parametrize("is_error", [True, False])
+def test_delete_movie_rating(tmdb, session_id, is_error):
+    if is_error:
+        with pytest.raises(RuntimeError):
+            assert tmdb.delete_movie_rating(movie_id)
+    else:
+        assert tmdb.delete_movie_rating(movie_id, session_id=session_id) is not None
 
 
 @polite

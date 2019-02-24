@@ -13,9 +13,18 @@ def test_get_tv_season_details(tmdb):
 
 
 @polite
-def test_get_tv_season_account_states(tmdb):
-    with pytest.raises(RuntimeError):
-        assert tmdb.get_tv_season_account_states(tv_id, season_number)
+@pytest.mark.parametrize("is_error", [True, False])
+def test_get_tv_season_account_states(tmdb, session_id, is_error):
+    if is_error:
+        with pytest.raises(RuntimeError):
+            assert tmdb.get_tv_season_account_states(tv_id, season_number)
+    else:
+        assert (
+            tmdb.get_tv_season_account_states(
+                tv_id, season_number, session_id=session_id
+            )
+            is not None
+        )
 
 
 @polite
