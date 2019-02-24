@@ -12,6 +12,7 @@ from .find import FindMixin
 from .genres import GenresMixin
 from .guest_sessions import GuestSessionsMixin
 from .keywords import KeywordsMixin
+from .lists import ListsMixin
 from .movies import MoviesMixin
 from .networks import NetworksMixin
 from .people import PeopleMixin
@@ -36,6 +37,7 @@ mixins = [
     GenresMixin,
     GuestSessionsMixin,
     KeywordsMixin,
+    ListsMixin,
     MoviesMixin,
     NetworksMixin,
     PeopleMixin,
