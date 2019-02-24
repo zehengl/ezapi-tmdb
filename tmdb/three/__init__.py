@@ -1,5 +1,6 @@
 import requests
 
+from .account import AccountMixin
 from .authentication import AuthenticationMixin
 from .certifications import CertificationsMixin
 from .changes import ChangesMixin
@@ -25,6 +26,7 @@ from .tv_episode_groups import TVEpisodeGroupsMixin
 from .tv_seasons import TVSeasonsMixin
 
 mixins = [
+    AccountMixin,
     AuthenticationMixin,
     CertificationsMixin,
     ChangesMixin,
