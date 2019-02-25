@@ -9,12 +9,12 @@ with open(path.join(here, "README.md")) as f:
 setup(
     name="ezapi_tmdb",
     keywords="TMDb",
-    version="0.4.0",
+    version="0.5.0",
     packages=find_packages(),
     description="An Python wrapper for TMDb API",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/zehengl/ezapi_tmdb",
+    url="https://github.com/zehengl/ezapi-tmdb",
     author="Zeheng Li",
     author_email="imzehengl@gmail.com",
     maintainer="Zeheng Li",
@@ -25,7 +25,7 @@ setup(
     tests_require=["pytest"],
     test_suite="tests",
     classifiers=[
-        "Development Status :: 2 - Pre-Alpha",
+        "Development Status :: 3 - Alpha",
         "Intended Audience :: Developers",
         "Topic :: Software Development :: Libraries :: Python Modules",
         "License :: OSI Approved :: MIT License",
