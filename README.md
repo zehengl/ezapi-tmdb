@@ -25,7 +25,7 @@ A Python wrapper for TMDb API, supporting version [3](https://developers.themovi
 ## Usage
 
 1. All endpoints are mapped to funtions in a `TMDb` object
-2. All query string params are used keyword arguments
+2. All query string params are used as keyword arguments
 
 See [documents](https://developers.themoviedb.org/3/getting-started) for detailed API usage.
 
