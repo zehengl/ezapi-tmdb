@@ -3,6 +3,7 @@
     "CoenraadS.bracket-pair-colorizer",
     "DavidAnson.vscode-markdownlint",
     "ms-python.python",
-    "njpwerner.autodocstring"
+    "njpwerner.autodocstring",
+    "oderwat.indent-rainbow"
   ]
 }
