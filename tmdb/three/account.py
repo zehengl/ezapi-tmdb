@@ -5,30 +5,50 @@ class AccountMixin:
     @any_required_kwargs(["session_id"])
     @process_response
     def get_account_details(self, **kwargs):
+        """
+        GET /account
+        """
+
         url = f"{ENDPOINT}/3/account"
         return self.make_request("GET", url, kwargs)
 
     @any_required_kwargs(["session_id"])
     @process_response
     def get_account_lists(self, account_id, **kwargs):
+        """
+        GET /account/{account_id}/lists
+        """
+
         url = f"{ENDPOINT}/3/account/{account_id}/lists"
         return self.make_request("GET", url, kwargs)
 
     @any_required_kwargs(["session_id"])
     @process_response
     def get_account_favorite_movies(self, account_id, **kwargs):
+        """
+        GET /account/{account_id}/favorite/movies
+        """
+
         url = f"{ENDPOINT}/3/account/{account_id}/favorite/movies"
         return self.make_request("GET", url, kwargs)
 
     @any_required_kwargs(["session_id"])
     @process_response
     def get_account_favorite_tvs(self, account_id, **kwargs):
+        """
+        GET /account/{account_id}/favorite/tv
+        """
+
         url = f"{ENDPOINT}/3/account/{account_id}/favorite/tv"
         return self.make_request("GET", url, kwargs)
 
     @any_required_kwargs(["session_id"])
     @process_response
     def mark_as_favorite(self, account_id, media_type, media_id, favorite, **kwargs):
+        """
+        POST /account/{account_id}/favorite
+        """
+
         url = f"{ENDPOINT}/3/account/{account_id}/favorite"
         payload = {
             "media_type": media_type,
@@ -40,36 +60,60 @@ class AccountMixin:
     @any_required_kwargs(["session_id"])
     @process_response
     def get_account_rated_movies(self, account_id, **kwargs):
+        """
+        GET /account/{account_id}/rated/movies
+        """
+
         url = f"{ENDPOINT}/3/account/{account_id}/rated/movies"
         return self.make_request("GET", url, kwargs)
 
     @any_required_kwargs(["session_id"])
     @process_response
     def get_account_rated_tvs(self, account_id, **kwargs):
+        """
+        GET /account/{account_id}/rated/tv
+        """
+
         url = f"{ENDPOINT}/3/account/{account_id}/rated/tv"
         return self.make_request("GET", url, kwargs)
 
     @any_required_kwargs(["session_id"])
     @process_response
     def get_account_rated_tv_episodes(self, account_id, **kwargs):
+        """
+        GET /account/{account_id}/rated/tv/episodes
+        """
+
         url = f"{ENDPOINT}/3/account/{account_id}/rated/tv/episodes"
         return self.make_request("GET", url, kwargs)
 
     @any_required_kwargs(["session_id"])
     @process_response
     def get_account_movie_watchlist(self, account_id, **kwargs):
+        """
+        GET /account/{account_id}/watchlist/movies
+        """
+
         url = f"{ENDPOINT}/3/account/{account_id}/watchlist/movies"
         return self.make_request("GET", url, kwargs)
 
     @any_required_kwargs(["session_id"])
     @process_response
     def get_account_tv_watchlist(self, account_id, **kwargs):
+        """
+        GET /account/{account_id}/watchlist/tv
+        """
+
         url = f"{ENDPOINT}/3/account/{account_id}/watchlist/tv"
         return self.make_request("GET", url, kwargs)
 
     @any_required_kwargs(["session_id"])
     @process_response
     def add_to_watchlist(self, account_id, media_type, media_id, watchlist, **kwargs):
+        """
+        POST /account/{account_id}/watchlist
+        """
+
         url = f"{ENDPOINT}/3/account/{account_id}/watchlist"
         payload = {
             "media_type": media_type,

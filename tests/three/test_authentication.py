@@ -1,5 +1,7 @@
 import os
 
+import pytest
+
 from . import polite
 
 
@@ -25,3 +27,9 @@ def test_session_workflow_with_login(tmdb):
     session_id = tmdb.create_session(request_token).get("session_id")
 
     assert tmdb.delete_session(session_id) is not None
+
+
+@polite
+def test_create_session_from_v4_access_token(tmdb):
+    with pytest.raises(NotImplementedError):
+        assert tmdb.create_session_from_v4_access_token()

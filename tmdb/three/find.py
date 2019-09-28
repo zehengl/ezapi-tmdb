@@ -5,5 +5,9 @@ class FindMixin:
     @any_required_kwargs(["external_source"])
     @process_response
     def find_by_id(self, external_id, **kwargs):
+        """
+        GET /find/{external_id}
+        """
+
         url = f"{ENDPOINT}/3/find/{external_id}"
         return self.make_request("GET", url, kwargs)
