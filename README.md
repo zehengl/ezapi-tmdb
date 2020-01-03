@@ -1,7 +1,5 @@
 # ezapi-tmdb
 
-A Python wrapper for TMDb API, supporting version [3](https://developers.themoviedb.org/3/getting-started)
-
 [![Travis](https://img.shields.io/travis/zehengl/ezapi-tmdb.svg)](https://travis-ci.org/zehengl/ezapi-tmdb)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
 ![PyPI - License](https://img.shields.io/pypi/l/ezapi-tmdb.svg)
@@ -10,6 +8,8 @@ A Python wrapper for TMDb API, supporting version [3](https://developers.themovi
 [![Downloads](https://pepy.tech/badge/ezapi-tmdb)](https://pepy.tech/project/ezapi-tmdb)
 ![GitHub commits since latest release](https://img.shields.io/github/commits-since/zehengl/ezapi-tmdb/0.5.0.svg)
 [![time tracker](https://wakatime.com/badge/github/zehengl/ezapi-tmdb.svg)](https://wakatime.com/badge/github/zehengl/ezapi-tmdb)
+
+A Python wrapper for TMDb API, supporting version [3](https://developers.themoviedb.org/3/getting-started)
 
 ## Install
 
