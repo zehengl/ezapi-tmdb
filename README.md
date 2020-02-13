@@ -28,7 +28,7 @@ Use `$Env:api_key="..."` , `$Env:username="..."`, and `$Env:password="..."` to s
 
 ## Usage
 
-1. All endpoints are mapped to funtions in a `TMDb` object
+1. All endpoints are mapped to functions in a `TMDb` object
 2. All query string params are used as keyword arguments
 
 See [documents](https://developers.themoviedb.org/3/getting-started) for detailed API usage.
