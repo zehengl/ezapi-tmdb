@@ -29,7 +29,7 @@ A Python wrapper for TMDb API, supporting version [3](https://developers.themovi
     cd ezapi-tmdb
     python setup.py test
 
-Use `$Env:api_key="..."` , `$Env:username="..."`, and `$Env:password="..."` to set the api key, username, and password envrionment variables on Windows.
+Use `$Env:api_key="..."` , `$Env:username="..."`, and `$Env:password="..."` to set the api key, username, and password environment variables on Windows.
 
 ## Usage
 
