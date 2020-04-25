@@ -1,3 +1,8 @@
+<div align="center">
+    <img src="https://cdn3.iconfinder.com/data/icons/data-sharing-and-cloud-lineal-style/512/apiprogrammingdevolperinterfaceappcomputer-512.png" alt="logo" height="196">
+    <img src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg" alt="yelp" height="96">
+</div>
+
 # ezapi-tmdb
 
 [![Travis](https://img.shields.io/travis/zehengl/ezapi-tmdb.svg)](https://travis-ci.org/zehengl/ezapi-tmdb)
@@ -52,3 +57,19 @@ See [documents](https://developers.themoviedb.org/3/getting-started) for detaile
 
     # some endpoints require session_id
     print(tmdb.get_account_details(session_id=session_id))
+
+<hr>
+
+<sup>
+
+## Credits
+
+- [Icon][1] by [Photolio][2]
+
+- Icon from [www.themoviedb.org][3]
+
+</sup>
+
+[1]: https://www.iconfinder.com/icons/4904814/api_app_computer_devolper_interface_programming_icon
+[2]: https://www.iconfinder.com/Muhammad_Auns
+[3]: https://www.themoviedb.org/about/logos-attribution
