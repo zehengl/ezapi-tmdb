@@ -57,6 +57,20 @@ See [documents](https://developers.themoviedb.org/3/getting-started) for detaile
     # some endpoints require session_id
     print(tmdb.get_account_details(session_id=session_id))
 
+    # store global options, language / region for example
+    tmdb.set_options(language="de", region="de")
+    tmdb.get_trending("all", "week")
+
+    # reset global options
+    tmdb.reset_options()
+
+    # configure image languages globally
+    tmdb.set_options(include_image_language=["en", "null"])
+    tmdb.get_movie_images(597)
+
+    # url param per request would overwrite global options
+    tmdb.get_movie_images(597, include_image_language=["de", "fr"])
+
 <hr>
 
 <sup>

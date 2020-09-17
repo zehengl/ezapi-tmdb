@@ -46,6 +46,9 @@ def test_get_movie_external_ids(tmdb):
 def test_get_movie_images(tmdb):
     assert tmdb.get_movie_images(movie_id) is not None
 
+    tmdb.set_options(include_image_language=["en", "null"])
+    assert tmdb.get_movie_images(movie_id) is not None
+
 
 @polite
 def test_get_movie_keywords(tmdb):
