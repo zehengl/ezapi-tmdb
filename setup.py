@@ -11,7 +11,7 @@ setup(
     keywords="TMDb",
     version="0.6.0",
     packages=find_packages(),
-    description="An Python wrapper for TMDb API",
+    description="A Python wrapper for TMDb API",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/zehengl/ezapi-tmdb",
