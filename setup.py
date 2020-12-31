@@ -6,6 +6,9 @@ here = path.abspath(path.dirname(__file__))
 with open(path.join(here, "README.md")) as f:
     long_description = f.read()
 
+with open(path.join(here, "requirements.txt")) as f:
+    requirements = f.read().splitlines()
+
 setup(
     name="ezapi_tmdb",
     keywords="TMDb",
@@ -20,7 +23,7 @@ setup(
     maintainer="Zeheng Li",
     maintainer_email="imzehengl@gmail.com",
     license="MIT",
-    install_requires=["requests", "wrapt"],
+    install_requires=requirements,
     setup_requires=["pytest-runner"],
     tests_require=["pytest"],
     test_suite="tests",
