@@ -36,11 +36,11 @@ Use `$Env:api_key="..."` , `$Env:username="..."`, and `$Env:password="..."` to s
 
 See [documents](https://developers.themoviedb.org/3/getting-started) for detailed API usage.
 
-    from tmdb import TMDb
+    from tmdb import TMDb3
 
     api_key = "..."
 
-    tmdb = TMDb(api_key)
+    tmdb = TMDb3(api_key)
 
     # query string params are used as keyword arguments
     print(tmdb.get_popular_movies(region="US"))
