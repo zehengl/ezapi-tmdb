@@ -80,9 +80,26 @@ tmdb.get_movie_images(597, include_image_language=["de", "fr"])
 ```python
 from tmdb import TMDb4
 
+# API Read Access Token from the settings page
 access_token = "..."
 
 tmdb = TMDb4(access_token)
+
+# create a user access token
+request_token = tmdb.create_request_token().get("request_token")
+print(f"https://www.themoviedb.org/auth/access?request_token={request_token}")
+
+# click on the link above, sign in, then approve access
+resp = tmdb.create_access_token(request_token)
+
+# extract the user access token and account id for v4 api
+user_access_token = resp.get("access_token")
+account_id = resp.get("account_id")
+
+tmdb.update_access_token(user_access_token)
+
+tmdb.get_list(14105)
+tmdb.get_account_favorite_movies(account_id)
 ```
 
 <hr>
