@@ -26,9 +26,11 @@ setup(
     install_requires=requirements,
     setup_requires=[
         "pytest-runner",
-        "pytest-seleniumbase",
     ],
-    tests_require=["pytest"],
+    tests_require=[
+        "pytest",
+        "seleniumbase",
+    ],
     test_suite="tests",
     classifiers=[
         "Development Status :: 3 - Alpha",
