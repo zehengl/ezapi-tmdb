@@ -21,14 +21,9 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: ${{ matrix.python-version }}
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          python -m pip install -r requirements-test.txt
-          seleniumbase install chromedriver
       - name: Test with pytest
         run: |
-          pytest --headless
+          python setup.py test
         env:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}

@@ -24,7 +24,10 @@ setup(
     maintainer_email="imzehengl@gmail.com",
     license="MIT",
     install_requires=requirements,
-    setup_requires=["pytest-runner"],
+    setup_requires=[
+        "pytest-runner",
+        "pytest-seleniumbase",
+    ],
     tests_require=["pytest"],
     test_suite="tests",
     classifiers=[
