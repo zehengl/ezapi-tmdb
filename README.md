@@ -12,7 +12,7 @@
 [![PyPI](https://img.shields.io/pypi/v/ezapi-tmdb.svg)](https://pypi.python.org/pypi/ezapi-tmdb)
 [![Downloads](https://pepy.tech/badge/ezapi-tmdb)](https://pepy.tech/project/ezapi-tmdb)
 
-A Python wrapper for TMDb API, supporting version [3](https://developers.themoviedb.org/3/getting-started)
+A Python wrapper for TMDb API, supporting version [3](https://developers.themoviedb.org/3/getting-started) and [4](https://developers.themoviedb.org/4/getting-started)
 
 ## Install
 
@@ -24,51 +24,66 @@ A Python wrapper for TMDb API, supporting version [3](https://developers.themovi
     export api_key="..."
     export username="..."
     export password="..."
+    export access_token="..."
     cd ezapi-tmdb
     python setup.py test
 
-Use `$Env:api_key="..."` , `$Env:username="..."`, and `$Env:password="..."` to set the api key, username, and password environment variables on Windows.
+Use `$Env:api_key="..."` , `$Env:username="..."`, `$Env:password="..."`, and `$Env:access_token="..."` to set the api key, username, password, and access token environment variables on Windows.
 
 ## Usage
 
 1. All endpoints are mapped to functions in a `TMDb` object
 2. All query string params are used as keyword arguments
 
+### Version 3 Example
+
 See [documents](https://developers.themoviedb.org/3/getting-started) for detailed API usage.
 
-    from tmdb import TMDb3
+```python
+from tmdb import TMDb3
 
-    api_key = "..."
+api_key = "..."
 
-    tmdb = TMDb3(api_key)
+tmdb = TMDb3(api_key)
 
-    # query string params are used as keyword arguments
-    print(tmdb.get_popular_movies(region="US"))
-    print(tmdb.get_tvs_on_the_air(page=10))
+# query string params are used as keyword arguments
+print(tmdb.get_popular_movies(region="US"))
+print(tmdb.get_tvs_on_the_air(page=10))
 
-    # create session_id with username/password login
-    username = "..."
-    password = "..."
-    request_token = tmdb.create_request_token().get("request_token")
-    tmdb.create_session_with_login(username, password, request_token)
-    session_id = tmdb.create_session(request_token).get("session_id")
+# create session_id with username/password login
+username = "..."
+password = "..."
+request_token = tmdb.create_request_token().get("request_token")
+tmdb.create_session_with_login(username, password, request_token)
+session_id = tmdb.create_session(request_token).get("session_id")
 
-    # some endpoints require session_id
-    print(tmdb.get_account_details(session_id=session_id))
+# some endpoints require session_id
+print(tmdb.get_account_details(session_id=session_id))
 
-    # store global options, language / region for example
-    tmdb.set_options(language="de", region="de")
-    tmdb.get_trending("all", "week")
+# store global options, language / region for example
+tmdb.set_options(language="de", region="de")
+tmdb.get_trending("all", "week")
 
-    # reset global options
-    tmdb.reset_options()
+# reset global options
+tmdb.reset_options()
 
-    # configure image languages globally
-    tmdb.set_options(include_image_language=["en", "null"])
-    tmdb.get_movie_images(597)
+# configure image languages globally
+tmdb.set_options(include_image_language=["en", "null"])
+tmdb.get_movie_images(597)
 
-    # url param per request would overwrite global options
-    tmdb.get_movie_images(597, include_image_language=["de", "fr"])
+# url param per request would overwrite global options
+tmdb.get_movie_images(597, include_image_language=["de", "fr"])
+```
+
+### Version 4 Example
+
+```python
+from tmdb import TMDb4
+
+access_token = "..."
+
+tmdb = TMDb4(access_token)
+```
 
 <hr>
 
