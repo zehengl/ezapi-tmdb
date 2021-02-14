@@ -42,3 +42,6 @@ class TMDb(*mixins):
 
     def reset_options(self):
         self.options = {}
+
+    def update_access_token(self, access_token):
+        self.access_token = access_token

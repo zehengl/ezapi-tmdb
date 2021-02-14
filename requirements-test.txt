@@ -1,0 +1,3 @@
+-r requirements.txt
+pytest==6.2.2
+seleniumbase==1.55.3
