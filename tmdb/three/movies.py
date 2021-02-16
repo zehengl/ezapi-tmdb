@@ -3,6 +3,15 @@ from .base import ENDPOINT, any_required_kwargs, process_response
 
 class MoviesMixin:
     @process_response
+    def get_movie_providers(self, movie_id, **kwargs):
+        """
+        GET /movie/{movie_id}/watch/providers
+        """
+
+        url = f"{ENDPOINT}/3/movie/{movie_id}/watch/providers"
+        return self.make_request("GET", url, kwargs)
+
+    @process_response
     def get_movie_details(self, movie_id, **kwargs):
         """
         GET /movie/{movie_id}
