@@ -91,6 +91,11 @@ def test_get_movie_lists(tmdb):
 
 
 @polite
+def test_get_movie_providers(tmdb):
+    assert tmdb.get_movie_providers(movie_id) is not None
+
+
+@polite
 @pytest.mark.parametrize("is_error", [True, False])
 def test_post_movie_rating(tmdb, session_id, is_error):
     if is_error:
