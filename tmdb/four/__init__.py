@@ -24,7 +24,9 @@ class TMDb(*mixins):
         )
 
     def make_request(self, method, url, request_params, payload=None):
-        params = {}
+        params = {
+            "timeout": 30,
+        }
         params.update(self.options)
         params.update(request_params)
 
