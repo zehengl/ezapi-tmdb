@@ -61,10 +61,7 @@ class TMDb(*mixins):
         self.session.headers.update({"Content-Type": "application/json;charset=utf-8"})
 
     def make_request(self, method, url, request_params, payload=None):
-        params = {
-            "api_key": self.api_key,
-            "timeout": 30,
-        }
+        params = {"api_key": self.api_key}
         params.update(self.options)
         params.update(request_params)
 
