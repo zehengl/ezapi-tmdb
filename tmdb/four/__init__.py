@@ -35,7 +35,7 @@ class TMDb(*mixins):
             if type(params[key]) is list:
                 params[key] = ",".join(params[key])
 
-        return self.session.request(method, url, params=params, json=payload)
+        return self.session.request(method, url, params=params, json=payload, timeout=30)
 
     def set_options(self, **kwargs):
         self.options.update(kwargs)
