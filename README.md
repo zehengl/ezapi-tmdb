@@ -5,7 +5,7 @@
 
 # ezapi-tmdb
 
-![pytest](https://github.com/zehengl/ezapi-tmdb/workflows/pytest/badge.svg)
+[![pytest](https://github.com/zehengl/ezapi-tmdb/actions/workflows/pytest.yml/badge.svg)](https://github.com/zehengl/ezapi-tmdb/actions/workflows/pytest.yml)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
 ![PyPI - License](https://img.shields.io/pypi/l/ezapi-tmdb.svg)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/ezapi-tmdb.svg)
@@ -102,17 +102,11 @@ tmdb.get_list(14105)
 tmdb.get_account_favorite_movies(account_id)
 ```
 
-<hr>
-
-<sup>
-
 ## Credits
 
 - [Icon][1] by [Photolio][2]
 
 - Icon from [www.themoviedb.org][3]
-
-</sup>
 
 [1]: https://www.iconfinder.com/icons/4904814/api_app_computer_devolper_interface_programming_icon
 [2]: https://www.iconfinder.com/Muhammad_Auns
