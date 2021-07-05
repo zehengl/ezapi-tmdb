@@ -16,19 +16,13 @@ A Python wrapper for TMDb API, supporting version [3](https://developers.themovi
 
 ## Install
 
+From [PyPi](https://pypi.org/project/ezapi-tmdb/)
+
     pip install ezapi-tmdb
 
-## Test
+From [GitHub](https://github.com/zehengl/ezapi-tmdb)
 
-    git clone git@github.com:zehengl/ezapi-tmdb.git
-    export api_key="..."
-    export username="..."
-    export password="..."
-    export access_token="..."
-    cd ezapi-tmdb
-    python setup.py test
-
-Use `$Env:api_key="..."` , `$Env:username="..."`, `$Env:password="..."`, and `$Env:access_token="..."` to set the api key, username, password, and access token environment variables on Windows.
+    pip install git+https://github.com/zehengl/ezapi-tmdb.git
 
 ## Usage
 
@@ -37,7 +31,7 @@ Use `$Env:api_key="..."` , `$Env:username="..."`, `$Env:password="..."`, and `$E
 
 ### Version 3 Example
 
-See [documents](https://developers.themoviedb.org/3/getting-started) for detailed API usage.
+See [Version 3 documents](https://developers.themoviedb.org/3/getting-started) for detailed API usage.
 
 ```python
 from tmdb import TMDb3
@@ -77,6 +71,8 @@ tmdb.get_movie_images(597, include_image_language=["de", "fr"])
 
 ### Version 4 Example
 
+See [Version 4 documents](https://developers.themoviedb.org/4/getting-started) for detailed API usage.
+
 ```python
 from tmdb import TMDb4
 
@@ -101,6 +97,18 @@ tmdb.update_access_token(user_access_token)
 tmdb.get_list(14105)
 tmdb.get_account_favorite_movies(account_id)
 ```
+
+## Test
+
+    git clone git@github.com:zehengl/ezapi-tmdb.git
+    export api_key="..."
+    export username="..."
+    export password="..."
+    export access_token="..."
+    cd ezapi-tmdb
+    python setup.py test
+
+Use `$Env:api_key="..."` , `$Env:username="..."`, `$Env:password="..."`, and `$Env:access_token="..."` to set the api key, username, password, and access token environment variables on Windows.
 
 ## Credits
 
