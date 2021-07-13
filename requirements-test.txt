@@ -1,3 +1,4 @@
 -r requirements.txt
 pytest==6.2.4
 seleniumbase==1.63.13
+pillow>=8.3.0 # not directly required, pinned by Snyk to avoid a vulnerability
