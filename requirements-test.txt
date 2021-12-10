@@ -1,3 +1,3 @@
 -r requirements.txt
 pytest==6.2.5
-seleniumbase==2.2.7
+seleniumbase==2.2.8
