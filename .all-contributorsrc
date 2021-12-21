@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "Cologler",
+      "name": "Cologler",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10906962?v=4",
+      "profile": "https://github.com/Cologler",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "ezapi-tmdb",
+  "projectOwner": "zehengl",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
