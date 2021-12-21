@@ -6,15 +6,7 @@
 # ezapi-tmdb
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-
-[![pytest](https://github.com/zehengl/ezapi-tmdb/actions/workflows/pytest.yml/badge.svg)](https://github.com/zehengl/ezapi-tmdb/actions/workflows/pytest.yml)
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
-![PyPI - License](https://img.shields.io/pypi/l/ezapi-tmdb.svg)
-![PyPI - Python Version](https://img.shields.io/pypi/pyversions/ezapi-tmdb.svg)
-[![PyPI](https://img.shields.io/pypi/v/ezapi-tmdb.svg)](https://pypi.python.org/pypi/ezapi-tmdb)
-[![Downloads](https://pepy.tech/badge/ezapi-tmdb)](https://pepy.tech/project/ezapi-tmdb)
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 A Python wrapper for TMDb API, supporting version [3](https://developers.themoviedb.org/3/getting-started) and [4](https://developers.themoviedb.org/4/getting-started)
@@ -135,6 +127,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://github.com/Cologler"><img src="https://avatars.githubusercontent.com/u/10906962?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Cologler</b></sub></a><br /><a href="https://github.com/zehengl/ezapi-tmdb/commits?author=Cologler" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/rafaelpierre"><img src="https://avatars.githubusercontent.com/u/13171938?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Rafael Pierre</b></sub></a><br /><a href="https://github.com/zehengl/ezapi-tmdb/commits?author=rafaelpierre" title="Code">💻</a></td>
   </tr>
 </table>
 
