@@ -1,12 +1,11 @@
 <div align="center">
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
     <img src="https://cdn3.iconfinder.com/data/icons/data-sharing-and-cloud-lineal-style/512/apiprogrammingdevolperinterfaceappcomputer-512.png" alt="logo" height="196">
     <img src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg" alt="yelp" height="96">
 </div>
 
 # ezapi-tmdb
+
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 
 [![pytest](https://github.com/zehengl/ezapi-tmdb/actions/workflows/pytest.yml/badge.svg)](https://github.com/zehengl/ezapi-tmdb/actions/workflows/pytest.yml)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
@@ -14,6 +13,9 @@
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/ezapi-tmdb.svg)
 [![PyPI](https://img.shields.io/pypi/v/ezapi-tmdb.svg)](https://pypi.python.org/pypi/ezapi-tmdb)
 [![Downloads](https://pepy.tech/badge/ezapi-tmdb)](https://pepy.tech/project/ezapi-tmdb)
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 A Python wrapper for TMDb API, supporting version [3](https://developers.themoviedb.org/3/getting-started) and [4](https://developers.themoviedb.org/4/getting-started)
 
