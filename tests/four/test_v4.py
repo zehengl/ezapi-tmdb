@@ -1,6 +1,5 @@
 import os
 
-import pytest
 from selenium.webdriver.common.by import By
 from seleniumbase import BaseCase
 from dotenv import load_dotenv
@@ -10,7 +9,6 @@ load_dotenv()
 
 
 class TMDb4TestClass(BaseCase):
-    @pytest.mark.skip(reason="request blocked")
     def test_v4_api(self):
         access_token = os.getenv("access_token")
         username = os.getenv("username")
