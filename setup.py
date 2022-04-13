@@ -30,6 +30,7 @@ setup(
     ],
     tests_require=[
         "pytest",
+        "python-dotenv",
         "seleniumbase",
     ],
     test_suite="tests",

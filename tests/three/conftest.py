@@ -1,8 +1,10 @@
 import os
 
 import pytest
-
+from dotenv import load_dotenv
 from tmdb.three import TMDb
+
+load_dotenv()
 
 
 @pytest.fixture(scope="module")
