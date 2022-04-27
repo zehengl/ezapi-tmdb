@@ -52,3 +52,23 @@ class TMDb4TestClass(BaseCase):
 
         # /list
         assert tmdb.get_list(14105) is not None
+
+        assert tmdb.get_list(14151) is not None
+
+        assert (
+            tmdb.get_list_item_status(
+                14151,
+                media_id=550,
+                media_type="movie",
+            )
+            is not None
+        )
+
+        assert (
+            tmdb.get_list_item_status(
+                14105,
+                media_id=1418,
+                media_type="tv",
+            )
+            is not None
+        )
