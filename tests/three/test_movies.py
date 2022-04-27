@@ -91,8 +91,8 @@ def test_get_movie_lists(tmdb):
 
 
 @polite
-def test_get_movie_providers(tmdb):
-    assert tmdb.get_movie_providers(movie_id) is not None
+def test_get_movie_watch_providers(tmdb):
+    assert tmdb.get_movie_watch_providers(movie_id) is not None
 
 
 @polite

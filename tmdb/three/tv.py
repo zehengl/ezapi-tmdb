@@ -147,6 +147,15 @@ class TVsMixin:
         url = f"{ENDPOINT}/3/tv/{tv_id}/videos"
         return self.make_request("GET", url, kwargs)
 
+    @process_response
+    def get_tv_watch_providers(self, tv_id, **kwargs):
+        """
+        GET /tv/{tv_id}/watch/providers
+        """
+
+        url = f"{ENDPOINT}/3/tv/{tv_id}/watch/providers"
+        return self.make_request("GET", url, kwargs)
+
     @any_required_kwargs(["session_id"], ["guest_session_id"])
     @process_response
     def post_tv_rating(self, tv_id, rating, **kwargs):

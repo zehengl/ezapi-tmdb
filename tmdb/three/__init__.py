@@ -24,6 +24,7 @@ from .tv import TVsMixin
 from .tv_episodes import TVEpisodesMixin
 from .tv_episode_groups import TVEpisodeGroupsMixin
 from .tv_seasons import TVSeasonsMixin
+from .watch_providers import WatchProvidersMixin
 
 mixins = [
     AccountMixin,
@@ -50,6 +51,7 @@ mixins = [
     TVEpisodesMixin,
     TVSeasonsMixin,
     TVsMixin,
+    WatchProvidersMixin,
 ]
 
 

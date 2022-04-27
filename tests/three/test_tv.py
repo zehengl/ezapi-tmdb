@@ -92,6 +92,11 @@ def test_get_tv_videos(tmdb):
 
 
 @polite
+def test_get_tv_watch_providers(tmdb):
+    assert tmdb.get_tv_watch_providers(tv_id) is not None
+
+
+@polite
 @pytest.mark.parametrize("is_error", [True, False])
 def test_post_tv_rating(tmdb, session_id, is_error):
     if is_error:
