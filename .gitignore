@@ -2,8 +2,8 @@ __pycache__
 .eggs
 .env
 .pytest_cache
+.venv
 *_logs
 *.egg-info
 build
 dist
-venv
