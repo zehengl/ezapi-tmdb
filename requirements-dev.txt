@@ -1,10 +1,10 @@
 -r requirements.txt
 black==22.3.0
-pip-check-updates==0.15.0
+pip-check-updates==0.16.0
 pylint==2.13.8
 pytest==7.1.2
 python-dotenv==0.20.0
 seleniumbase==2.5.4.post1
-setuptools==62.1.0
+setuptools==62.2.0
 twine==4.0.0
 wheel==0.37.1
