@@ -1,5 +1,5 @@
 from os import path
-from setuptools import find_packages, setup
+from setuptools import setup
 
 here = path.abspath(path.dirname(__file__))
 
@@ -13,7 +13,7 @@ setup(
     name="ezapi_tmdb",
     keywords="TMDb",
     version="0.8.0",
-    packages=find_packages(),
+    packages=["tmdb"],
     description="A Python wrapper for TMDb API",
     long_description=long_description,
     long_description_content_type="text/markdown",
