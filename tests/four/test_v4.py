@@ -43,8 +43,10 @@ class TMDb4TestClass(BaseCase):
         assert tmdb.get_account_lists(account_id) is not None
         assert tmdb.get_account_favorite_movies(account_id) is not None
         assert tmdb.get_account_favorite_tv_shows(account_id) is not None
-        assert tmdb.get_account_movie_recommendations(account_id) is not None
-        assert tmdb.get_account_tv_show_recommendations(account_id) is not None
+
+        # assert tmdb.get_account_movie_recommendations(account_id) is not None
+        # assert tmdb.get_account_tv_show_recommendations(account_id) is not None
+
         assert tmdb.get_account_movie_watchlist(account_id) is not None
         assert tmdb.get_account_tv_show_watchlist(account_id) is not None
         assert tmdb.get_account_rated_movies(account_id) is not None
