@@ -40,5 +40,3 @@ def test_list_operations(tmdb, session_id):
     except:
         # internal error happens quite often
         pass
-
-    assert tmdb.delete_session(session_id) is not None
