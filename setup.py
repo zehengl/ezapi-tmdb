@@ -12,7 +12,7 @@ with open(path.join(here, "requirements.txt")) as f:
 setup(
     name="ezapi_tmdb",
     keywords="TMDb",
-    version="0.8.0",
+    version="0.8.1",
     packages=["tmdb"],
     description="A Python wrapper for TMDb API",
     long_description=long_description,
