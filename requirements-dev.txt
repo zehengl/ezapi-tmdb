@@ -4,7 +4,7 @@ pip-check-updates==0.18.1
 pylint==2.15.10
 pytest==7.2.1
 python-dotenv==0.21.1
-seleniumbase==4.11.8
-setuptools==66.1.1
+seleniumbase==4.12.3
+setuptools==67.0.0
 twine==4.0.2
 wheel==0.38.4
