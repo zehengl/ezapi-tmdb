@@ -1,6 +1,6 @@
 import pytest
 
-from . import polite
+from utils import polite
 
 search_types = ["company", "collection", "keyword", "movie", "multi", "person", "tv"]
 search_kwargs = [({}, True), ({"query": "titanic"}, False)]

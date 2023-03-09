@@ -1,6 +1,6 @@
 import pytest
 
-from . import polite
+from utils import polite
 
 movie_id = 597  # Titanic
 

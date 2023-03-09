@@ -1,4 +1,4 @@
-from . import polite
+from utils import polite
 
 
 @polite

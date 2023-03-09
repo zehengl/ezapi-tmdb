@@ -1,9 +1,12 @@
 import os
+import sys
 
 import pytest
 from dotenv import load_dotenv
+
 from tmdb.three import TMDb
 
+sys.path.append(os.path.join(os.path.dirname(__file__), "helpers"))
 load_dotenv()
 
 

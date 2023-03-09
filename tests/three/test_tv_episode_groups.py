@@ -1,4 +1,4 @@
-from . import polite
+from utils import polite
 
 tv_episode_group_id = "5b1aa75ac3a368490e016641"
 

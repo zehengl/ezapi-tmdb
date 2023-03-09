@@ -1,4 +1,4 @@
-from . import polite
+from utils import polite
 
 review_id = "578193f29251417c28001764"
 

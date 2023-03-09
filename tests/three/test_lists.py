@@ -4,7 +4,7 @@ import time
 
 import pytest
 
-from . import polite
+from utils import polite
 
 list_id = 14151
 movie_id = 597

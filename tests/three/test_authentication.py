@@ -2,7 +2,7 @@ import os
 
 import pytest
 
-from . import polite
+from utils import polite
 
 
 @polite

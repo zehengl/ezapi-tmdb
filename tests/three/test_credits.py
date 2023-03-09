@@ -1,4 +1,4 @@
-from . import polite
+from utils import polite
 
 credit_id = "52542282760ee313280017f9"
 

@@ -1,4 +1,4 @@
-from . import polite
+from utils import polite
 
 collection_id = 86311  # The Avengers Collection
 

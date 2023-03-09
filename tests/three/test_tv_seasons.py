@@ -1,6 +1,6 @@
 import pytest
 
-from . import polite
+from utils import polite
 
 
 tv_id = 1418  # The Big Bang Theory

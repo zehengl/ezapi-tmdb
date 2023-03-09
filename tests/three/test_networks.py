@@ -1,4 +1,4 @@
-from . import polite
+from utils import polite
 
 network_id = 16  # CBS
 

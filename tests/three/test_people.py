@@ -1,4 +1,4 @@
-from . import polite
+from utils import polite
 
 person_id = 192  # Morgan Freeman
 

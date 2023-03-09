@@ -1,6 +1,6 @@
 import pytest
 
-from . import polite
+from utils import polite
 
 media_type, media_id = "movie", 550
 

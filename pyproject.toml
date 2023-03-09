@@ -1,0 +1,45 @@
+[project]
+name = "ezapi-tmdb"
+dynamic = ["version", "dependencies"]
+authors = [{ name = "Zeheng Li", email = "imzehengl@gmail.com" }]
+maintainers = [{ name = "Zeheng Li", email = "imzehengl@gmail.com" }]
+description = "A Python wrapper for TMDb API"
+readme = "README.md"
+requires-python = ">=3.7"
+keywords = ["TMDb"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+
+[project.urls]
+repository = "https://github.com/zehengl/ezapi-tmdb"
+homepage = "https://zehengl.github.io/ezapi-tmdb/"
+
+
+[tool.setuptools_scm]
+
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = [
+    "--import-mode=importlib",
+    "--headless",
+    '--agent="Mozilla/5.0 (platform; rv:geckoversion) Gecko/geckotrail Firefox/firefoxversion"',
+]
+
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
+
+
+[build-system]
+requires = ["setuptools>=67.0", "setuptools_scm>=7.1.0"]
+build-backend = "setuptools.build_meta"

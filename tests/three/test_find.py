@@ -1,6 +1,6 @@
 import pytest
 
-from . import polite
+from utils import polite
 
 externals = [
     ("imdb_id", "tt0903747"),

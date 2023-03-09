@@ -2,7 +2,7 @@ from itertools import product
 
 import pytest
 
-from . import polite
+from utils import polite
 
 media_types = ["all", "movie", "tv", "person"]
 time_windows = ["day", "week"]
