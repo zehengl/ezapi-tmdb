@@ -1,0 +1,1 @@
+{"config":{"lang":["en"],"separator":"[\\s\\-]+","pipeline":["stopWordFilter"]},"docs":[{"location":"","title":"Home","text":""},{"location":"#ezapi-tmdb","title":"ezapi-tmdb","text":"<p>A Python wrapper for TMDb API, supporting version 3 and 4</p>"}]}
