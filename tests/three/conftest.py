@@ -12,15 +12,15 @@ load_dotenv()
 
 @pytest.fixture(scope="module")
 def tmdb():
-    api_key = os.getenv("api_key", None)
+    api_key = os.getenv("tmdb_api_key", None)
 
     return TMDb(api_key) if api_key else None
 
 
 @pytest.fixture(scope="module")
 def session_id(tmdb):
-    username = os.getenv("username")
-    password = os.getenv("password")
+    username = os.getenv("tmdb_username")
+    password = os.getenv("tmdb_password")
     request_token = tmdb.create_request_token().get("request_token")
 
     tmdb.create_session_with_login(username, password, request_token)

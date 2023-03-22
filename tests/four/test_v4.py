@@ -10,9 +10,9 @@ load_dotenv()
 
 class TMDb4TestClass(BaseCase):
     def test_v4_api(self):
-        access_token = os.getenv("access_token")
-        username = os.getenv("username")
-        password = os.getenv("password")
+        access_token = os.getenv("tmdb_access_token")
+        username = os.getenv("tmdb_username")
+        password = os.getenv("tmdb_password")
 
         msg = "Missing one or more configs (username, password, access_token)"
         if not all([username, password, access_token]):

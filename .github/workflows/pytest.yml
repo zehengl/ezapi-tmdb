@@ -27,7 +27,7 @@ jobs:
           pip install -e .
           pytest
         env:
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}
-          api_key: ${{ secrets.API_KEY }}
-          access_token: ${{ secrets.ACCESS_TOKEN }}
+          tmdb_username: ${{ secrets.TMDB_USERNAME }}
+          tmdb_password: ${{ secrets.TMDB_PASSWORD }}
+          tmdb_api_key: ${{ secrets.TMDB_API_KEY }}
+          tmdb_access_token: ${{ secrets.TMDB_ACCESS_TOKEN }}

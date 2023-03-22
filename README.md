@@ -1,5 +1,4 @@
 <div align="center">
-    <img src="https://cdn3.iconfinder.com/data/icons/data-sharing-and-cloud-lineal-style/512/apiprogrammingdevolperinterfaceappcomputer-512.png" alt="logo" height="196">
     <img src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg" alt="yelp" height="96">
 </div>
 
@@ -101,25 +100,27 @@ tmdb.get_account_favorite_movies(account_id)
 
 ## Test
 
-    git clone git@github.com:zehengl/ezapi-tmdb.git
-    export api_key="..."
-    export username="..."
-    export password="..."
-    export access_token="..."
-    cd ezapi-tmdb
-    python setup.py test
+```bash
+git clone git@github.com:zehengl/ezapi-tmdb.git
+cd ezapi-tmdb
+export tmdb_api_key="..."
+export tmdb_username="..."
+export tmdb_password="..."
+export tmdb_access_token="..."
+python -m venv .venv
+source .venv/bin/activate
+pip install -e .
+pip install -r requirements-test.txt
+pytest
+```
 
-Use `$Env:api_key="..."` , `$Env:username="..."`, `$Env:password="..."`, and `$Env:access_token="..."` to set the api key, username, password, and access token environment variables on Windows.
+Use `$Env:tmdb_api_key="..."` , `$Env:tmdb_username="..."`, `$Env:tmdb_password="..."`, and `$Env:tmdb_access_token="..."` to set the api key, username, password, and access token environment variables on Windows.
 
 ## Credits
 
-- [Icon][1] by [Photolio][2]
+- Icon from [www.themoviedb.org][1]
 
-- Icon from [www.themoviedb.org][3]
-
-[1]: https://www.iconfinder.com/icons/4904814/api_app_computer_devolper_interface_programming_icon
-[2]: https://www.iconfinder.com/Muhammad_Auns
-[3]: https://www.themoviedb.org/about/logos-attribution
+[1]: https://www.themoviedb.org/about/logos-attribution
 
 ## Contributors ✨
 

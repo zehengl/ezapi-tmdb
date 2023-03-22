@@ -17,8 +17,8 @@ def test_create_request_token(tmdb):
 
 @polite
 def test_session_workflow_with_login(tmdb):
-    username = os.getenv("username")
-    password = os.getenv("password")
+    username = os.getenv("tmdb_username")
+    password = os.getenv("tmdb_password")
     request_token = tmdb.create_request_token().get("request_token")
 
     assert username and password and request_token
