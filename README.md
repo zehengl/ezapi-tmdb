@@ -130,10 +130,13 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 <table>
-  <tr>
-    <td align="center"><a href="https://github.com/Cologler"><img src="https://avatars.githubusercontent.com/u/10906962?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Cologler</b></sub></a><br /><a href="https://github.com/zehengl/ezapi-tmdb/commits?author=Cologler" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/rafaelpierre"><img src="https://avatars.githubusercontent.com/u/13171938?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Rafael Pierre</b></sub></a><br /><a href="https://github.com/zehengl/ezapi-tmdb/commits?author=rafaelpierre" title="Code">💻</a></td>
-  </tr>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Cologler"><img src="https://avatars.githubusercontent.com/u/10906962?v=4?s=100" width="100px;" alt="Cologler"/><br /><sub><b>Cologler</b></sub></a><br /><a href="https://github.com/zehengl/ezapi-tmdb/commits?author=Cologler" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/rafaelpierre"><img src="https://avatars.githubusercontent.com/u/13171938?v=4?s=100" width="100px;" alt="Rafael Pierre"/><br /><sub><b>Rafael Pierre</b></sub></a><br /><a href="https://github.com/zehengl/ezapi-tmdb/commits?author=rafaelpierre" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/joselimajr"><img src="https://avatars.githubusercontent.com/u/3194122?v=4?s=100" width="100px;" alt="joselimajr"/><br /><sub><b>joselimajr</b></sub></a><br /><a href="#ideas-joselimajr" title="Ideas, Planning, & Feedback">🤔</a></td>
+    </tr>
+  </tbody>
 </table>
 
 <!-- markdownlint-restore -->
