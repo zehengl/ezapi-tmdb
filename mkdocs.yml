@@ -23,7 +23,7 @@ theme:
   features:
     - header.autohide
     - content.code.copy
-repo_name: zehengl/ezapi-tmdb
+repo_name: ezapi-tmdb
 repo_url: https://github.com/zehengl/ezapi-tmdb
 plugins:
   - search
