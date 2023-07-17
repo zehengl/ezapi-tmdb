@@ -1,3 +1,3 @@
 pytest==7.4.0
-seleniumbase==4.15.13
+seleniumbase==4.15.15
 python-dotenv
