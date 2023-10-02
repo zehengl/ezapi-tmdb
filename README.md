@@ -9,8 +9,9 @@
 ![all-contributors](https://img.shields.io/github/all-contributors/zehengl/ezapi-tmdb)
 ![PyPI - License](https://img.shields.io/pypi/l/ezapi-tmdb.svg)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/ezapi-tmdb.svg)
-[![PyPI](https://img.shields.io/pypi/v/ezapi-tmdb.svg)](https://pypi.python.org/pypi/ezapi-tmdb)
+![PyPI - Wheel](https://img.shields.io/pypi/wheel/ezapi-tmdb)
 [![Downloads](https://static.pepy.tech/badge/ezapi-tmdb)](https://pepy.tech/project/ezapi-tmdb)
+[![GitHub Pages](https://github.com/zehengl/ezapi-tmdb/actions/workflows/gh-deploy.yml/badge.svg)](https://github.com/zehengl/ezapi-tmdb/actions/workflows/gh-deploy.yml)
 
 A Python wrapper for TMDb API, supporting version [3](https://developers.themoviedb.org/3/getting-started) and [4](https://developers.themoviedb.org/4/getting-started)
 
