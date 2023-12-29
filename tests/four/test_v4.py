@@ -1,8 +1,9 @@
 import os
 
+from dotenv import load_dotenv
 from selenium.webdriver.common.by import By
 from seleniumbase import BaseCase
-from dotenv import load_dotenv
+
 from tmdb.four import TMDb
 
 load_dotenv()

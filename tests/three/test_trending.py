@@ -1,7 +1,6 @@
 from itertools import product
 
 import pytest
-
 from utils import polite
 
 media_types = ["all", "movie", "tv", "person"]

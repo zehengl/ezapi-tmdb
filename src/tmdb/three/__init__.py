@@ -17,12 +17,12 @@ from .lists import ListsMixin
 from .movies import MoviesMixin
 from .networks import NetworksMixin
 from .people import PeopleMixin
-from .search import SearchMixin
 from .reviews import ReviewsMixin
+from .search import SearchMixin
 from .trending import TrendingMixin
 from .tv import TVsMixin
-from .tv_episodes import TVEpisodesMixin
 from .tv_episode_groups import TVEpisodeGroupsMixin
+from .tv_episodes import TVEpisodesMixin
 from .tv_seasons import TVSeasonsMixin
 from .watch_providers import WatchProvidersMixin
 

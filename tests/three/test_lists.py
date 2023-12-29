@@ -1,9 +1,4 @@
-import os
-import random
-import time
-
 import pytest
-
 from utils import polite
 
 list_id = 14151

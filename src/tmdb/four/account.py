@@ -1,4 +1,4 @@
-from .base import process_response, ENDPOINT
+from .base import ENDPOINT, process_response
 
 
 class AccountMixin:

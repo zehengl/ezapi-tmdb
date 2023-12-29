@@ -1,5 +1,4 @@
 import pytest
-
 from utils import polite
 
 search_types = ["company", "collection", "keyword", "movie", "multi", "person", "tv"]
