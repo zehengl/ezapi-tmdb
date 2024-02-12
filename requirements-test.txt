@@ -1,3 +1,3 @@
 pytest==8.0.0
-seleniumbase==4.23.2
+seleniumbase==4.23.3
 python-dotenv==1.0.1
