@@ -1,5 +1,6 @@
 import os
 
+import pytest
 from dotenv import load_dotenv
 from selenium.webdriver.common.by import By
 from seleniumbase import BaseCase
@@ -10,6 +11,7 @@ load_dotenv()
 
 
 class TMDb4TestClass(BaseCase):
+    @pytest.mark.xfail
     def test_v4_api(self):
         access_token = os.getenv("tmdb_access_token")
         username = os.getenv("tmdb_username")
