@@ -1,2 +1,2 @@
-seleniumbase==4.47.9
+seleniumbase==4.48.0
 python-dotenv==1.2.2
